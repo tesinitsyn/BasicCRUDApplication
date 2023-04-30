@@ -27,8 +27,7 @@ REST API application with in-memory database(H2).
 
 
 ## Request Examples
-So to test this out add something to the database
-Generete post request(e.g. postman): http://localhost:8080/api/disks
+So to test this out add something to the database, generete post request(e.g. postman): http://localhost:8080/api/disks
 
 {
 
