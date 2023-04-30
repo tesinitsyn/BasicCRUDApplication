@@ -1,7 +1,6 @@
 package com.example.BasicCRUDApplication.model;
 
 import jakarta.persistence.*;
-import org.hibernate.annotations.Table;
 
 @Entity
 @Table(name = "disks")
@@ -12,6 +11,9 @@ public class Disk {
 
     @Column
     private String name;
+
+    @Column
+    private String description;
 
     @Column
     private String genre;
@@ -31,6 +33,14 @@ public class Disk {
 
     public void setId(Long id) {
         Id = id;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
     }
 
     public String getName() {
