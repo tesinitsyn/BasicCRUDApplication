@@ -8,11 +8,12 @@ REST API application with in-memory database(H2).
 
 ## Methods
 
-- Get disk
+-Create disk
+- Get disk by id
 - Get all disks
-- Delete disk
+- Delete disk by id
 - Delete all disks
-- Modify disk
+- Modify disk by id
 
 
 
