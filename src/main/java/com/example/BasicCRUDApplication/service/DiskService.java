@@ -2,7 +2,6 @@ package com.example.BasicCRUDApplication.service;
 
 import com.example.BasicCRUDApplication.model.Disk;
 import com.example.BasicCRUDApplication.repository.DiskRepository;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -10,8 +9,11 @@ import java.util.Optional;
 
 @Service
 public class DiskService {
-    @Autowired
-    private DiskRepository diskRepository;
+    private final DiskRepository diskRepository;
+
+    public DiskService(DiskRepository diskRepository) {
+        this.diskRepository = diskRepository;
+    }
 
     public List<Disk> getAllDisks(){
         return diskRepository.findAll();

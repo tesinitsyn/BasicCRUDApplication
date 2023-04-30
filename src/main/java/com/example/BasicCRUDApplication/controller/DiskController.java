@@ -2,9 +2,7 @@ package com.example.BasicCRUDApplication.controller;
 
 import com.example.BasicCRUDApplication.model.Disk;
 import com.example.BasicCRUDApplication.service.DiskService;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
-import org.springframework.http.HttpStatusCode;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -14,8 +12,11 @@ import java.util.Optional;
 @RestController
 @RequestMapping("/api/disks")
 public class DiskController {
-    @Autowired
-    private DiskService diskService;
+    private final DiskService diskService;
+
+    public DiskController(DiskService diskService) {
+        this.diskService = diskService;
+    }
 
     @GetMapping("")
     public List<Disk> getAllDisks(){

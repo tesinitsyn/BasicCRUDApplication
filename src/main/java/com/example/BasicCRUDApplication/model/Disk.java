@@ -3,7 +3,7 @@ package com.example.BasicCRUDApplication.model;
 import jakarta.persistence.*;
 
 @Entity
-@Table(name = "disks")
+@Table()
 public class Disk {
     @jakarta.persistence.Id
     @GeneratedValue(strategy = GenerationType.AUTO)
