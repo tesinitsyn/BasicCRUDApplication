@@ -8,7 +8,7 @@ REST API application with in-memory database(H2).
 
 ## Methods
 
--Create disk
+- Create disk
 - Get disk by id
 - Get all disks
 - Delete disk by id
@@ -28,7 +28,7 @@ REST API application with in-memory database(H2).
 
 
 ## Request Example
-So to test this out add something to the database, generete post request(e.g. postman): http://localhost:8080/api/disks
+So to test this out add something to the database, generate post request(e.g. postman): http://localhost:8080/api/disks
 
 {
 
